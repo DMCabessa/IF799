@@ -38,7 +38,7 @@ public class Snippet {
 		OWLOntologyManager m = create();
 		OWLOntology o = m.loadOntologyFromOntologyDocument(project_iri);
 		
-		Set<OWLClass> classes = o.getClassesInSignature();
+//		Set<OWLClass> classes = o.getClassesInSignature();
 		Set<OWLNamedIndividual> individuals = o.getIndividualsInSignature();
 		for(OWLNamedIndividual ni : individuals){
 			System.out.println(ni.getIRI().getShortForm());
