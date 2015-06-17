@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.Set;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.io.StringDocumentTarget;
 import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
@@ -39,28 +40,25 @@ public class Snippet {
 		OWLOntology o = m.loadOntologyFromOntologyDocument(project_iri);
 		
 //		Set<OWLClass> classes = o.getClassesInSignature();
-		Set<OWLNamedIndividual> individuals = o.getIndividualsInSignature();
-		for(OWLNamedIndividual ni : individuals){
-			System.out.println(ni.getIRI().getShortForm());
-		}
+//		Set<OWLNamedIndividual> individuals = o.getIndividualsInSignature();
+//		for(OWLNamedIndividual ni : individuals){
+//			System.out.println(ni.getIRI().getShortForm());
+//		}
 		
-		OWLIndividual db = df.getOWLNamedIndividual(
-		IRI.create(project_iri + "#David_Billington"));
-		Set<OWLObjectProperty> properties = db.getObjectPropertiesInSignature();
-		for(OWLObjectProperty op : properties){
-			System.out.println(op.getIRI());
-		}
+		OWLIndividual ruy = df.getOWLNamedIndividual(
+		IRI.create("#Ruy_Guerra"));
+		OWLIndividual anjolina = df.getOWLNamedIndividual(
+		IRI.create("#Anjolina_Grisi"));
+		OWLObjectProperty hasSpouse = df.getOWLObjectProperty(
+		IRI.create("#hasSpouse"));
+		OWLAxiom assertion = df.getOWLObjectPropertyAssertionAxiom(hasSpouse, ruy, anjolina);
+		AddAxiom addAxiomChange = new AddAxiom(o, assertion);
+		m.applyChange(addAxiomChange);
 		
-//		OWLIndividual ruy = df.getOWLNamedIndividual(
-//		IRI.create(project_iri + "#Ruy_Guerra"));
-//		OWLIndividual anjolina = df.getOWLNamedIndividual(
-//		IRI.create(project_iri + "#Anjolina_Grisi"));
-//		OWLObjectProperty hasSpouse = df.getOWLObjectProperty(
-//		IRI.create(project_iri + "#hasSpouse"));
-//		OWLAxiom assertion = df.getOWLObjectPropertyAssertionAxiom(hasSpouse, ruy, anjolina);
-//		AddAxiom addAxiomChange = new AddAxiom(o, assertion);
-//		m.applyChange(addAxiomChange);
-//		
-//		System.out.println("All changes applied!");
+		StringDocumentTarget target = new StringDocumentTarget();
+		m.saveOntology(o, target);
+		
+		// This is the output OWL file
+		System.out.println(target.toString());
 	}
 }
