@@ -23,7 +23,7 @@ public class DLQueryPrinter {
         } else {
             try {
                 StringBuilder sb = new StringBuilder();
-                sb.append("\\nQUERY:   ").append(classExpression).append("\\n\\n");
+                sb.append("\nQUERY:   ").append(classExpression).append("\n\n");
                 Set<OWLClass> superClasses = dlQueryEngine.getSuperClasses(
                         classExpression, false);
                 printEntities("SuperClasses", superClasses, sb);
@@ -31,10 +31,10 @@ public class DLQueryPrinter {
                         .getEquivalentClasses(classExpression);
                 printEntities("EquivalentClasses", equivalentClasses, sb);
                 Set<OWLClass> subClasses = dlQueryEngine.getSubClasses(classExpression,
-                        true);
+                        false);
                 printEntities("SubClasses", subClasses, sb);
                 Set<OWLNamedIndividual> individuals = dlQueryEngine.getInstances(
-                        classExpression, true);
+                        classExpression, false);
                 printEntities("Instances", individuals, sb);
                 System.out.println(sb.toString());
             } catch (ParserException e) {
@@ -50,15 +50,15 @@ public class DLQueryPrinter {
         for (int i = 0; i < length; i++) {
             sb.append(".");
         }
-        sb.append("\\n\\n");
+        sb.append("\n\n");
         if (!entities.isEmpty()) {
             for (OWLEntity entity : entities) {
-                sb.append("\\t").append(shortFormProvider.getShortForm(entity))
-                        .append("\\n");
+                sb.append("\t").append(shortFormProvider.getShortForm(entity))
+                        .append("\n");
             }
         } else {
-            sb.append("\\t[NONE]\\n");
+            sb.append("\t[NONE]\n");
         }
-        sb.append("\\n");
+        sb.append("\n");
     }
 }
