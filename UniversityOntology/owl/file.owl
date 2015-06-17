@@ -19,6 +19,7 @@
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
@@ -173,6 +174,11 @@
         <NamedIndividual IRI="#Discrete_Mathematics"/>
         <NamedIndividual IRI="#David_Billington"/>
     </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <NamedIndividual IRI="#Ruy_Guerra"/>
+        <NamedIndividual IRI="#Anjolina_Grisi"/>
+    </ObjectPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#graduate"/>
         <ObjectProperty IRI="#studies"/>
@@ -185,6 +191,10 @@
         <ObjectProperty IRI="#undergraduate"/>
         <ObjectProperty IRI="#studies"/>
     </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSpouse"/>
+        <ObjectProperty IRI="#hasSpouse"/>
+    </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasUnit"/>
         <ObjectProperty IRI="#unitOf"/>

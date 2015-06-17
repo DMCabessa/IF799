@@ -1,6 +1,9 @@
 package main.test;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.Set;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
@@ -34,7 +37,7 @@ public class Snippet {
 		return m;
 	}
 	
-	public static void main(String[] args) throws OWLOntologyCreationException, OWLOntologyStorageException {
+	public static void main(String[] args) throws OWLOntologyCreationException, OWLOntologyStorageException, FileNotFoundException, UnsupportedEncodingException {
 		
 		OWLOntologyManager m = create();
 		OWLOntology o = m.loadOntologyFromOntologyDocument(project_iri);
@@ -56,10 +59,13 @@ public class Snippet {
 		AddAxiom addAxiomChange = new AddAxiom(o, assertion);
 		m.applyChange(addAxiomChange);
 		
+		// Saving into target
 		StringDocumentTarget target = new StringDocumentTarget();
 		m.saveOntology(o, target);
 		
-		// This is the output OWL file
-		System.out.println(target.toString());
+		// Print result into file
+		PrintWriter writer = new PrintWriter(f);
+		writer.println(target.toString());
+		writer.close();
 	}
 }
