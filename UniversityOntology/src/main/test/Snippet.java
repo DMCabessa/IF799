@@ -45,6 +45,7 @@ public class Snippet {
 //			System.out.println(ni.getIRI().getShortForm());
 //		}
 		
+		// Create assertion
 		OWLIndividual ruy = df.getOWLNamedIndividual(
 		IRI.create("#Ruy_Guerra"));
 		OWLIndividual anjolina = df.getOWLNamedIndividual(
