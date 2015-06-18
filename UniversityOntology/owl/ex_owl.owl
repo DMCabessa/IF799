@@ -1,0 +1,560 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ebl4/ontologies/2015/4/untitled-ontology-2"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ebl4/ontologies/2015/4/untitled-ontology-2">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Adult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnimalLover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Driver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Duck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elderly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Female"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MadCow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Male"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Man"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OldLady"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sheep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tabloid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Van"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vegan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteVanMan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Young"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#queryTest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#drives"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eatenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eats"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPetOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#likes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#part"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reads"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#serviceNr"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DailyMirror"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dewey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Huey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Laura"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Louie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Miau"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mick"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Minnie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Q123ABC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Walt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#num42"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AnimalLover"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#hasPet"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Driver"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#drives"/>
+                <Class IRI="#Vehicle"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MadCow"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Cow"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#eats"/>
+                <Class IRI="#Brain"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#part"/>
+                <Class IRI="#Sheep"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Man"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Adult"/>
+            <Class IRI="#Male"/>
+            <Class IRI="#Person"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OldLady"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Elderly"/>
+            <Class IRI="#Female"/>
+            <Class IRI="#Person"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Adult"/>
+            <Class IRI="#Male"/>
+            <Class IRI="#Person"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Vegan"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Animal"/>
+            <ObjectComplementOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#eats"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#part"/>
+                        <Class IRI="#Animal"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectAllValuesFrom>
+            </ObjectComplementOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#eats"/>
+                <ObjectComplementOf>
+                    <Class IRI="#Animal"/>
+                </ObjectComplementOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WhiteVanMan"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Man"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#drives"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Van"/>
+                    <Class IRI="#WhiteThing"/>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#queryTest"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Dog"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isPetOf"/>
+                <Class IRI="#Person"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Adult"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#eats"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnimalLover"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#part"/>
+            <Class IRI="#Animal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cat"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cow"/>
+        <Class IRI="#Vegan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Driver"/>
+        <Class IRI="#Adult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Duck"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Elderly"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Female"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Male"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Man"/>
+        <Class IRI="#Male"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OldLady"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPet"/>
+                <Class IRI="#Animal"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasPet"/>
+                <Class IRI="#Cat"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Van"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegan"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteThing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#reads"/>
+            <Class IRI="#Tabloid"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteVanMan"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#reads"/>
+            <Class IRI="#Tabloid"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Young"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Animal"/>
+        <Class IRI="#Car"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cat"/>
+        <Class IRI="#Dog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cat"/>
+        <Class IRI="#Duck"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Dewey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OldLady"/>
+        <NamedIndividual IRI="#Laura"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Mick"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <Class IRI="#Elderly"/>
+            <Class IRI="#Female"/>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#Minnie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Van"/>
+        <NamedIndividual IRI="#Q123ABC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WhiteThing"/>
+        <NamedIndividual IRI="#Q123ABC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Q123ABC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dog"/>
+        <NamedIndividual IRI="#Rex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Rex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Tom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Walt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bus"/>
+        <NamedIndividual IRI="#num42"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#num42"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Dewey"/>
+        <NamedIndividual IRI="#Huey"/>
+        <NamedIndividual IRI="#Louie"/>
+        <NamedIndividual IRI="#Walt"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPet"/>
+        <NamedIndividual IRI="#Laura"/>
+        <NamedIndividual IRI="#Miau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#drives"/>
+        <NamedIndividual IRI="#Mick"/>
+        <NamedIndividual IRI="#Q123ABC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reads"/>
+        <NamedIndividual IRI="#Mick"/>
+        <NamedIndividual IRI="#DailyMirror"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPet"/>
+        <NamedIndividual IRI="#Minnie"/>
+        <NamedIndividual IRI="#Tom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPetOf"/>
+        <NamedIndividual IRI="#Rex"/>
+        <NamedIndividual IRI="#Mick"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPet"/>
+        <NamedIndividual IRI="#Walt"/>
+        <NamedIndividual IRI="#Huey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPet"/>
+        <NamedIndividual IRI="#Walt"/>
+        <NamedIndividual IRI="#Dewey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPet"/>
+        <NamedIndividual IRI="#Walt"/>
+        <NamedIndividual IRI="#Louie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reads"/>
+        <NamedIndividual IRI="#num42"/>
+        <NamedIndividual IRI="#DailyMirror"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#drives"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPet"/>
+        <ObjectProperty IRI="#likes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#likes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#reads"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPet"/>
+        <ObjectProperty IRI="#isPetOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#eatenBy"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPet"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#likes"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#part"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#reads"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPet"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Animal"/>
+            <ObjectComplementOf>
+                <Class IRI="#Person"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#part"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#reads"/>
+        <Class IRI="#Document"/>
+    </ObjectPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#serviceNr"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
