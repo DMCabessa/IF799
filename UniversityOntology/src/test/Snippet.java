@@ -1,4 +1,4 @@
-package main.test;
+package test;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -41,6 +41,8 @@ import org.semanticweb.owlapi.util.ShortFormProvider;
 import org.semanticweb.owlapi.util.SimpleShortFormProvider;
 
 import uk.ac.manchester.cs.owl.owlapi.OWLDataFactoryImpl;
+import util.dlquery.DLQueryEngine;
+import util.dlquery.DLQueryPrinter;
 
 public class Snippet { 
 	public static final File f = new File("owl/project_ontology.owl");

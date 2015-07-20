@@ -1,4 +1,4 @@
-package main.test;
+package util.dlquery;
 
 import java.util.Collections;
 import java.util.Set;
