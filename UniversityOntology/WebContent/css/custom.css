@@ -1,0 +1,17 @@
+.btn-custom {
+	background-color: #A90D0D;
+	color: white;
+}
+
+.btn-custom:hover {
+	color: white;
+	background-color: #e00000;
+}
+
+.center {
+	text-align: center;
+}
+
+.margin {
+	margin: 2em 5em;
+}
