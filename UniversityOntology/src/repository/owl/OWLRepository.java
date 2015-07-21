@@ -8,10 +8,12 @@ import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
+import org.semanticweb.owlapi.model.OWLDataPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLLiteral;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
+import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
@@ -122,5 +124,42 @@ public class OWLRepository implements OWLRepositoryInterface{
 		return dlQueryPrinter.getIndividuals(toSearch.trim());
 	}
 	
-	
+	public Set<OWLDataPropertyAssertionAxiom> getAxiomsByIndividual(OWLNamedIndividual individual) throws OWLOntologyCreationException{
+		OWLOntologyManager m = Util.create();
+		OWLOntology o = m.loadOntologyFromOntologyDocument(Constants.PROJECT_IRI);
+		
+		return o.getDataPropertyAssertionAxioms(individual);
+	}
+
+	public Set<OWLDataPropertyAssertionAxiom> getAllDataProperties() throws OWLOntologyCreationException {
+		OWLOntologyManager m = Util.create();
+		OWLOntology o = m.loadOntologyFromOntologyDocument(Constants.PROJECT_IRI);
+		
+		Set<OWLNamedIndividual> individuals = o.getIndividualsInSignature();
+		Set<OWLDataPropertyAssertionAxiom> axioms = null;
+		
+		for(OWLNamedIndividual i : individuals){
+			Set<OWLDataPropertyAssertionAxiom> properties = o.getDataPropertyAssertionAxioms(i);
+			if(axioms == null) axioms = properties;
+			else axioms.addAll(properties);
+		}
+		
+		return axioms;
+	}
+
+	public Set<OWLObjectPropertyAssertionAxiom> getAllObjectProperties() throws OWLOntologyCreationException {
+		OWLOntologyManager m = Util.create();
+		OWLOntology o = m.loadOntologyFromOntologyDocument(Constants.PROJECT_IRI);
+		
+		Set<OWLNamedIndividual> individuals = o.getIndividualsInSignature();
+		Set<OWLObjectPropertyAssertionAxiom> axioms = null;
+		
+		for(OWLNamedIndividual i : individuals){
+			Set<OWLObjectPropertyAssertionAxiom> properties = o.getObjectPropertyAssertionAxioms(i);
+			if(axioms == null) axioms = properties;
+			else axioms.addAll(properties);
+		}
+		
+		return axioms;
+	}
 }

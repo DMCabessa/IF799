@@ -1,12 +1,15 @@
 package facade;
 
 import java.util.HashSet;
+import java.util.Hashtable;
 import java.util.Set;
 
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataProperty;
+import org.semanticweb.owlapi.model.OWLDataPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
+import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
@@ -95,5 +98,15 @@ public class OWLFacade {
 		return control.getEquivalentClasses(toSearch);
 	}
 	
-
+	public Hashtable<String, String> getDataProperties(OWLNamedIndividual individual) throws OWLOntologyCreationException{
+		return control.getDataProperties(individual);
+	}
+	
+	public Set<OWLDataPropertyAssertionAxiom> getAllDataProperties() throws OWLOntologyCreationException{
+		return control.getAllDataProperties();
+	}
+	
+	public Set<OWLObjectPropertyAssertionAxiom> getAllObjectProperties() throws OWLOntologyCreationException{
+		return control.getAllObjectProperties();
+	}
 }

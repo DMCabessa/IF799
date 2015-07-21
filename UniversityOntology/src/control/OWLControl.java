@@ -1,15 +1,18 @@
 package control;
 
+import java.util.Hashtable;
 import java.util.Set;
 
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
+import org.semanticweb.owlapi.model.OWLDataPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLLiteral;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
+import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
@@ -146,6 +149,25 @@ public class OWLControl {
 	
 	public Set<OWLNamedIndividual> getIndividuals(String toSearch) throws OWLOntologyCreationException {
 		return repository.getIndividuals(toSearch);
+	}
+
+	public Hashtable<String, String> getDataProperties(OWLNamedIndividual individual) throws OWLOntologyCreationException {
+		Set<OWLDataPropertyAssertionAxiom> properties = repository.getAxiomsByIndividual(individual);
+		
+		Hashtable<String, String> table = new Hashtable<String, String>();
+		for(OWLDataPropertyAssertionAxiom dpaa : properties){
+			table.put(dpaa.getProperty().asOWLDataProperty().getIRI().getFragment(), dpaa.getObject().toString());
+		}
+		
+		return table;
+	}
+
+	public Set<OWLDataPropertyAssertionAxiom> getAllDataProperties() throws OWLOntologyCreationException {
+		return repository.getAllDataProperties();
+	}
+
+	public Set<OWLObjectPropertyAssertionAxiom> getAllObjectProperties() throws OWLOntologyCreationException {
+		return repository.getAllObjectProperties();
 	}
 	
 	

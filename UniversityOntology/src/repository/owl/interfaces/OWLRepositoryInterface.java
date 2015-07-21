@@ -4,10 +4,12 @@ import java.util.Set;
 
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataProperty;
+import org.semanticweb.owlapi.model.OWLDataPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLLiteral;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
+import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
@@ -30,4 +32,10 @@ public interface OWLRepositoryInterface {
 	public Set<OWLClass> getSubClasses(String toSearch) throws OWLOntologyCreationException;
 	
 	public Set<OWLClass> getSuperClasses(String toSearch) throws OWLOntologyCreationException;
+	
+	public Set<OWLDataPropertyAssertionAxiom> getAxiomsByIndividual(OWLNamedIndividual individual) throws OWLOntologyCreationException;
+
+	public Set<OWLDataPropertyAssertionAxiom> getAllDataProperties() throws OWLOntologyCreationException;
+
+	public Set<OWLObjectPropertyAssertionAxiom> getAllObjectProperties() throws OWLOntologyCreationException;
 }
