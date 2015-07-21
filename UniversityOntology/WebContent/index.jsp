@@ -71,7 +71,7 @@
 		        });
 			}
 		})
-		$("#toSearch").change(function() {
+		$("#toSearch").keyup(function() {
 			$.ajax({
 	            type: "POST",
 	            url: "ajax-search",

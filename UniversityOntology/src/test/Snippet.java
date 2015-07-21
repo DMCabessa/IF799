@@ -124,7 +124,7 @@ public class Snippet {
             if (classExpression == null || classExpression.equalsIgnoreCase("x")) {
                 break;
             }
-            dlQueryPrinter.askQuery(classExpression.trim());
+            //dlQueryPrinter.askQuery(classExpression.trim());
             System.out.println();
         }
         
