@@ -11,5 +11,16 @@
 	   <servlet-name>Ajax Insert Property</servlet-name>
 	   <url-pattern>/ajax-insert-property</url-pattern>
   	</servlet-mapping>
+  	
+  	<servlet>
+	   <description></description>
+	   <display-name>Ajax Insert Data</display-name>
+	   <servlet-name>Ajax Insert Data</servlet-name>
+	   <jsp-file>/ajax-insert-data.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	   <servlet-name>Ajax Insert Data</servlet-name>
+	   <url-pattern>/ajax-insert-data</url-pattern>
+  	</servlet-mapping>
 
 </web-app>

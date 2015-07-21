@@ -1,8 +1,9 @@
 <%@page import="org.semanticweb.owlapi.model.OWLDataProperty"%>
 <%@page import="java.util.Set"%>
 <%@page import="org.semanticweb.owlapi.model.OWLObjectProperty"%>
-<%@page contentType="text/html; charset=UTF-8" %>
 <%@page import="facade.OWLFacade"%>
+<%@page contentType="text/html; charset=UTF-8" %>
+
 
 <!doctype html>
 <html>
@@ -30,36 +31,41 @@
 	$(function() {
 		$("#tabs").tabs();
 		$("#insertPropertyButton").click(function() {
-			$.ajax({
-	            type: "POST",
-	            url: "ajax-insert-property",
-				data: {obj1: $("#obj1").val(), obj2: $("#obj2").val(), property: $("#property").val()},
-	            success: function () {
-	                $("#obj1").val("");
-	                $("#obj2").val("");
-	                $("#property").val("0");
-	                $('#successfulInsert').slideDown(100).delay(2000).slideUp(400);
-	            },
-				error: function () {
-					$('#errorInsert').slideDown(100).delay(2000).slideUp(400);
-				}
-	        });
+			if ($("#obj1").val() == "" || $("#obj2").val() == "" || $("#property").val() == "0") {
+				$('#errorInsert').slideDown(100).delay(2000).slideUp(400);	
+			} else {
+				$.ajax({
+		            type: "POST",
+		            url: "ajax-insert-property",
+					data: {obj1: $("#obj1").val(), obj2: $("#obj2").val(), property: $("#property").val()},
+		            success: function () {
+		                $("#obj1").val("");
+		                $("#obj2").val("");
+		                $("#property").val("0");
+		                $('#successfulInsert').slideDown(100).delay(2000).slideUp(400);
+		            }
+		        });
+			}
 		})
 		$("#insertDataButton").click(function() {
-			$.ajax({
-	            type: "POST",
-	            url: "ajax-insert-data",
-				data: {obj: $("#obj").val(), attribute: $("#attribute").val(), value: $("#value").val()},
-	            success: function (r) {
-	                $("#obj").val("");
-	                $("#value").val("");
-	                $("#attribute").val("0");
-	                $('#successfulInsert2').slideDown(100).delay(2000).slideUp(400);
-	            },
-	            error: function () {
-					$('#errorInsert2').slideDown(100).delay(2000).slideUp(400);
-				}
-	        });
+			if ($("#obj").val() == "" || $("#value").val() == "" || $("#attribute").val() == "0") {
+				$('#errorInsert2').slideDown(100).delay(2000).slideUp(400);	
+			} else {
+				$.ajax({
+		            type: "POST",
+		            url: "ajax-insert-data",
+					data: {obj: $("#obj").val(), attribute: $("#attribute").val(), value: $("#value").val()},
+		            success: function () {
+		                $("#obj").val("");
+		                $("#value").val("");
+		                $("#attribute").val("0");
+		                $('#successfulInsert2').slideDown(100).delay(2000).slideUp(400);
+		            }
+		        });
+			}
+		})
+		$("#toSearch").change(function() {
+			
 		})
 	});
 </script>
@@ -79,7 +85,7 @@
 				<div id="successfulInsert" style="text-align: center; display: none;">
 					<div class="pure-u-1-3">
                     	<div class="l-box">
-                        	<div class="alert-success">
+                        	<div class="alert-success" style="margin-bottom: 2%">
                         		Success!
                        		</div>
                 		</div>
@@ -88,8 +94,8 @@
 	            <div id="errorInsert" style="text-align: center; display: none;">
 					<div class="pure-u-1-3">
                     	<div class="l-box">
-                        	<div class="alert-error">
-                        		Preencha todos os campos!
+                        	<div class="alert-danger" style="margin-bottom: 2%">
+                        		Fill all the fields!
                        		</div>
                 		</div>
                 	</div>
@@ -118,7 +124,7 @@
 				<div id="successfulInsert2" style="text-align: center; display: none;">
 					<div class="pure-u-1-3">
                     	<div class="l-box">
-                        	<div class="alert-success">
+                        	<div class="alert-success" style="margin-bottom: 2%">
                         		Success!
                        		</div>
                 		</div>
@@ -127,8 +133,8 @@
 	             <div id="errorInsert2" style="text-align: center; display: none;">
 					<div class="pure-u-1-3">
                     	<div class="l-box">
-                        	<div class="alert-error">
-                        		Preencha todos os campos!
+                        	<div class="alert-danger" style="margin-bottom: 2%">
+                        		Fill all the fields!
                        		</div>
                 		</div>
                 	</div>
@@ -149,11 +155,15 @@
 					%>
 				</select>
 				<input id="value" placeholder="Value">
-				<button id="insertDataButton" class="btn-custom btn">Insert</button>
+				<button id="insertDataButton" class="btn-custom btn"><b>Insert</b></button>
 			</div>
 		</div>
-		<div id="search">
-		
+		<div id="search" class="pure-form">
+			<div class="center pure-u-1">
+				<input id="toSearch" class="pure-u-1-2">
+				<div id="result">
+				</div>
+			</div>	
 		</div>
 	</div>
 </div>

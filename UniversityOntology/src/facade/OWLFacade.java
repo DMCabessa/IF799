@@ -30,31 +30,8 @@ public class OWLFacade {
 	public void insertObjectProperty(String propertyName, String sourceName,
 			String targetName) throws OWLOntologyCreationException,
 			OWLOntologyStorageException {
+		
 		control.insertObjectProperty(propertyName, sourceName, targetName);
-	}
-
-	public void insertDataProperty(String propertyName, String sourceName,
-			boolean value) throws OWLOntologyCreationException,
-			OWLOntologyStorageException {
-		control.insertDataProperty(propertyName, sourceName, value);
-	}
-
-	public void insertDataProperty(String propertyName, String sourceName,
-			double value) throws OWLOntologyCreationException,
-			OWLOntologyStorageException {
-		control.insertDataProperty(propertyName, sourceName, value);
-	}
-
-	public void insertDataProperty(String propertyName, String sourceName,
-			float value) throws OWLOntologyCreationException,
-			OWLOntologyStorageException {
-		control.insertDataProperty(propertyName, sourceName, value);
-	}
-
-	public void insertDataProperty(String propertyName, String sourceName,
-			int value) throws OWLOntologyCreationException,
-			OWLOntologyStorageException {
-		control.insertDataProperty(propertyName, sourceName, value);
 	}
 
 	public void insertDataProperty(String propertyName, String sourceName,
