@@ -9,9 +9,13 @@ import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
+import org.semanticweb.owlapi.model.OWLDataPropertyAssertionAxiom;
+import org.semanticweb.owlapi.model.OWLDataPropertyExpression;
 import org.semanticweb.owlapi.model.OWLDatatype;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLLiteral;
+import org.semanticweb.owlapi.model.OWLLogicalAxiom;
+import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
@@ -72,9 +76,18 @@ public class Snippet02 {
 	}
 	
 	public static void main(String[] args) throws OWLOntologyCreationException, OWLOntologyStorageException {
-		Set<OWLObjectProperty> props = OWLFacade.getInstance().getObjectProperties();
-		for(OWLObjectProperty p : props){
-			System.out.println(p.getIRI().getFragment());
+		OWLOntologyManager m = Util.create();
+		OWLOntology o = m.loadOntologyFromOntologyDocument(Constants.PROJECT_IRI);
+		
+		Set<OWLNamedIndividual> individuals = o.getIndividualsInSignature();
+		
+		for(OWLNamedIndividual i : individuals){
+			Set<OWLDataPropertyAssertionAxiom> properties = o.getDataPropertyAssertionAxioms(i);
+			for(OWLDataPropertyAssertionAxiom dpaa : properties){
+				OWLDataProperty dp = dpaa.getProperty().asOWLDataProperty();
+				System.out.println(i.getIRI().getFragment() + " :: " + dp.getIRI().getFragment() + " = " + dpaa.getObject());
+			}
 		}
+
 	}
 }

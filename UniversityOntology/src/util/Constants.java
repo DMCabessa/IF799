@@ -15,9 +15,10 @@ public interface Constants {
 	// * Remote server (either dev os sistemas) -> linux_prefix
 	String prefix = linux_prefix;
 	String sufix = "/owl/project_ontology.owl";
-	File catalinaBase = new File(System.getProperty("catalina.base")).getAbsoluteFile();
+	//File catalinaBase = new File(System.getProperty("catalina.base")).getAbsoluteFile();
 	
-	File ONTOLOGY_FILE = new File(catalinaBase,prefix+sufix);
+	//File ONTOLOGY_FILE = new File(catalinaBase,prefix+sufix);
+	File ONTOLOGY_FILE = new File("WebContent/WEB-INF/owl/project_ontology.owl");
 	IRI PROJECT_IRI = IRI.create(ONTOLOGY_FILE);
 	OWLDataFactory DATA_FACTORY = OWLManager.getOWLDataFactory();
 }
