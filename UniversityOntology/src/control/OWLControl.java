@@ -100,14 +100,20 @@ public class OWLControl {
 	
 	public void insertDataProperty(String propertyName, String sourceName, String value)
 			throws OWLOntologyCreationException, OWLOntologyStorageException {
+		
 		OWLDataFactory df = Constants.DATA_FACTORY;
 		
 		OWLIndividual source = df.getOWLNamedIndividual(
 		IRI.create(sourceName));
 		OWLDataProperty property = df.getOWLDataProperty(
 		IRI.create(propertyName));
-		OWLLiteral literal = df.getOWLLiteral(value);
-		
+		OWLLiteral literal;
+		try {
+			int intValue = Integer.parseInt(value);
+			literal = df.getOWLLiteral(intValue);
+		} catch (NumberFormatException e) {
+			literal = df.getOWLLiteral(value);
+		}		
 		repository.insertDataProperty(property, source, literal);
 	}
 
