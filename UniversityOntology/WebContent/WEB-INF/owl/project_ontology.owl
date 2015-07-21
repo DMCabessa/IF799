@@ -170,6 +170,48 @@
         <NamedIndividual IRI="#ComputerScience"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#EL215"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ES203"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ES232"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ES238"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ES344"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ES413"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ES414"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ET586"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FI006"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FI007"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FI021"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FI108"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FI582"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF421"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#IF668"/>
     </Declaration>
     <Declaration>
@@ -179,10 +221,91 @@
         <NamedIndividual IRI="#IF670"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#IF672"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF673"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF674"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF675"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF676"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF677"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF678"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF679"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF680"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF681"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF682"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF683"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF684"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF685"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF686"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF687"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF688"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF689"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF690"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF691"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF813"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF816"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF817"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IF819"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#InformationSystems"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#LE530"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#MA026"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MA027"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MA128"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MA531"/>
@@ -544,6 +667,62 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Course"/>
+        <NamedIndividual IRI="#EL215"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#ES203"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#ES232"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#ES238"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#ES344"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#ES413"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#ES414"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#ET586"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#FI006"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#FI007"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#FI021"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#FI108"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#FI582"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF421"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
         <NamedIndividual IRI="#IF668"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -555,12 +734,120 @@
         <NamedIndividual IRI="#IF670"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF672"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF673"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF674"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF675"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF676"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF677"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF678"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF679"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF680"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF681"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF682"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF683"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF684"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF685"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF686"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF687"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF688"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF689"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF690"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF691"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF813"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF816"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF817"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#IF819"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Faculty"/>
         <NamedIndividual IRI="#InformationSystems"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Course"/>
+        <NamedIndividual IRI="#LE530"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
         <NamedIndividual IRI="#MA026"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#MA027"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#MA128"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Course"/>
@@ -920,6 +1207,81 @@
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#EL215"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#ES203"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#ES232"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#ES238"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#ES344"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#ES413"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#ES414"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#ET586"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#ET586"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#FI006"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#FI007"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#FI021"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#FI108"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#FI582"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF421"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
         <NamedIndividual IRI="#IF668"/>
         <NamedIndividual IRI="#ComputerScience"/>
     </ObjectPropertyAssertion>
@@ -947,6 +1309,211 @@
         <ObjectProperty IRI="#unitOf"/>
         <NamedIndividual IRI="#IF670"/>
         <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF672"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF672"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF673"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF673"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF674"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF674"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF675"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF675"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF676"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF676"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF677"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF677"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF678"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF678"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF679"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF679"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF680"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF681"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF682"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF682"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF683"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF684"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF684"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF685"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF685"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF686"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF686"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF687"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF688"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF688"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF689"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF689"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF690"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF690"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF691"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF813"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF816"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF817"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#IF819"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#LE530"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#LE530"/>
+        <NamedIndividual IRI="#ComputerScience"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#unitOf"/>
@@ -962,6 +1529,16 @@
         <ObjectProperty IRI="#unitOf"/>
         <NamedIndividual IRI="#MA026"/>
         <NamedIndividual IRI="#InformationSystems"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#MA027"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#unitOf"/>
+        <NamedIndividual IRI="#MA128"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#unitOf"/>
@@ -1020,6 +1597,216 @@
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#EL215"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#EL215"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#EL215"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Circuitos Elétricos 1A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#ES203"/>
+        <Literal datatypeIRI="&xsd;integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#ES203"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#ES203"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Eletromagnetismo 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#ES232"/>
+        <Literal datatypeIRI="&xsd;integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#ES232"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#ES232"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Introdução a Dispositivos Semicondutores</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#ES238"/>
+        <Literal datatypeIRI="&xsd;integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#ES238"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#ES238"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Eletrônica 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#ES344"/>
+        <Literal datatypeIRI="&xsd;integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#ES344"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#ES344"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Princípios de Comunicação</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#ES413"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#ES413"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#ES413"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sinais e Sistemas para Engenharia da Computação</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#ES414"/>
+        <Literal datatypeIRI="&xsd;integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#ES414"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#ES414"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Servomecanismo para Engenharia da Computação</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#ET586"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#ET586"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#ET586"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Estatística e Probabilidade para Computação</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#FI006"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#FI006"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#FI006"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cálculo Diferencial e Integral 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#FI007"/>
+        <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#FI007"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#FI007"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Física Geral 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#FI021"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#FI021"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#FI021"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Física Experimental 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#FI108"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#FI108"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#FI108"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Física Geral 3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#FI582"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#FI582"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#FI582"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Física para Computação</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF421"/>
+        <Literal datatypeIRI="&xsd;integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF421"/>
+        <Literal datatypeIRI="&xsd;integer">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF421"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Estágio Obrigatório</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
         <NamedIndividual IRI="#IF668"/>
         <Literal datatypeIRI="&xsd;integer">1</Literal>
     </DataPropertyAssertion>
@@ -1065,6 +1852,381 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF672"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF672"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF672"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Algoritmos e Estruturas de Dados</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF673"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF673"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF673"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lógica para Computação</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF674"/>
+        <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF674"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF674"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Infraestrutura de Hardware</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF675"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF675"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF675"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sistemas Digitais</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF676"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF676"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF676"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Metodologia e Expressão Técnico-Científica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF677"/>
+        <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF677"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF677"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Infraestrutura de Software</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF678"/>
+        <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF678"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF678"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Infraestrutura de Comunicação</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF679"/>
+        <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF679"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF679"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Informática e Sociedade</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF680"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF680"/>
+        <Literal datatypeIRI="&xsd;integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF680"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Processamento Gráfico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF681"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF681"/>
+        <Literal datatypeIRI="&xsd;integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF681"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Interfaces Usuário-Máquina</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF682"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF682"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF682"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Engenharia de Software e Sistemas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF683"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF683"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF683"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Projeto de Desenvolvimento</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF684"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF684"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF684"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sistemas Inteligentes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF685"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF685"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF685"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Gerenciamento de Dados e Informação</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF686"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF686"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF686"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Paradigmas de Linguagens Computacionais</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF687"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF687"/>
+        <Literal datatypeIRI="&xsd;integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF687"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Introdução a Multimídia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF688"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF688"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF688"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Teoria e Implementação de Linguagens Computacionais</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF689"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF689"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF689"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Informática Teórica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF690"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF690"/>
+        <Literal datatypeIRI="&xsd;integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF690"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">História e Futuro da Computação</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF691"/>
+        <Literal datatypeIRI="&xsd;integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF691"/>
+        <Literal datatypeIRI="&xsd;integer">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF691"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trabalho de Graduaçã</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF813"/>
+        <Literal datatypeIRI="&xsd;integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF813"/>
+        <Literal datatypeIRI="&xsd;integer">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF813"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trabalho de Graduação</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF816"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF816"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF816"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Métodos Numéricos Computacionais</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF817"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF817"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF817"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Interface Hardware-Software</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#IF819"/>
+        <Literal datatypeIRI="&xsd;integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#IF819"/>
+        <Literal datatypeIRI="&xsd;integer">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#IF819"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Estágio Obrigatório</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#LE530"/>
+        <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#LE530"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#LE530"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Inglês para Computação</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
         <NamedIndividual IRI="#MA026"/>
         <Literal datatypeIRI="&xsd;integer">1</Literal>
     </DataPropertyAssertion>
@@ -1077,6 +2239,36 @@
         <DataProperty IRI="#fullName"/>
         <NamedIndividual IRI="#MA026"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Cálculo Diferencial e Integral 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#MA027"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#MA027"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#MA027"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Física Geral 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicTerm"/>
+        <NamedIndividual IRI="#MA128"/>
+        <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credit"/>
+        <NamedIndividual IRI="#MA128"/>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#MA128"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cálculo Diferencial e Integral 3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#academicTerm"/>
