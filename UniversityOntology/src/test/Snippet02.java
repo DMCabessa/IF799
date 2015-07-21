@@ -1,5 +1,7 @@
 package test;
 
+import java.util.Set;
+
 import org.semanticweb.owlapi.io.OWLXMLOntologyFormat;
 import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.IRI;
@@ -17,6 +19,7 @@ import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import org.semanticweb.owlapi.vocab.OWL2Datatype;
 
+import facade.OWLFacade;
 import uk.ac.manchester.cs.owl.owlapi.OWLNamedIndividualImpl;
 import util.Constants;
 import util.Util;
@@ -69,12 +72,9 @@ public class Snippet02 {
 	}
 	
 	public static void main(String[] args) throws OWLOntologyCreationException, OWLOntologyStorageException {
-		String course = "#IF672";
-		String professor = "#katiag";
-		String relation = "#isTaughtBy";
-		String fullname = "#fullName";
-		//addEntity(course);
-		//addRelation(course, relation, professor);
-		addData(course, fullname, "Algoritmos e Estruturas de Dados");
+		Set<OWLObjectProperty> props = OWLFacade.getInstance().getObjectProperties();
+		for(OWLObjectProperty p : props){
+			System.out.println(p.getIRI().getFragment());
+		}
 	}
 }
