@@ -130,6 +130,22 @@ public class OWLControl {
 			throws OWLOntologyCreationException {
 		return repository.getDataProperties();
 	}
+
+	public Set<String> getSuperClasses(String toSearch) throws OWLOntologyCreationException {
+		return repository.getSuperClasses(toSearch);
+	}
+	
+	public Set<String> getSubClasses(String toSearch) throws OWLOntologyCreationException {
+		return repository.getSubClasses(toSearch);
+	}
+	
+	public Set<String> getEquivalentClasses(String toSearch) throws OWLOntologyCreationException {
+		return repository.getEquivalentClasses(toSearch);
+	}
+	
+	public Set<String> getIndividuals(String toSearch) throws OWLOntologyCreationException {
+		return repository.getIndividuals(toSearch);
+	}
 	
 	
 }

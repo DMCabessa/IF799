@@ -29,6 +29,13 @@
 <body>
 <script>
 	$(function() {
+		$("#toSearch").val("");
+		$("#obj1").val("");
+		$("#obj2").val("");
+		$("#obj").val("");
+		$("#value").val("");
+		$("#attribute").val("0");
+		$("#property").val("0");
 		$("#tabs").tabs();
 		$("#insertPropertyButton").click(function() {
 			if ($("#obj1").val() == "" || $("#obj2").val() == "" || $("#property").val() == "0") {
@@ -65,7 +72,14 @@
 			}
 		})
 		$("#toSearch").change(function() {
-			
+			$.ajax({
+	            type: "POST",
+	            url: "ajax-search",
+				data: {toSearch: $("#toSearch").val()},
+	            success: function (r) {
+	            	$("#result").html(r);
+	            }
+	        });
 		})
 	});
 </script>

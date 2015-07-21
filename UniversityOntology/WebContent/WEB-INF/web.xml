@@ -22,5 +22,16 @@
 	   <servlet-name>Ajax Insert Data</servlet-name>
 	   <url-pattern>/ajax-insert-data</url-pattern>
   	</servlet-mapping>
+  	
+  	<servlet>
+	   <description></description>
+	   <display-name>Ajax Search</display-name>
+	   <servlet-name>Ajax Search</servlet-name>
+	   <jsp-file>/ajax-search.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	   <servlet-name>Ajax Search</servlet-name>
+	   <url-pattern>/ajax-search</url-pattern>
+  	</servlet-mapping>
 
 </web-app>

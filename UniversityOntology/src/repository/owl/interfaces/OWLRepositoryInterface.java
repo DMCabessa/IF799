@@ -21,4 +21,12 @@ public interface OWLRepositoryInterface {
 	public Set<OWLObjectProperty> getObjectProperties() throws OWLOntologyCreationException;
 	
 	public Set<OWLDataProperty> getDataProperties() throws OWLOntologyCreationException;
+
+	public Set<String> getIndividuals(String toSearch) throws OWLOntologyCreationException;
+	
+	public Set<String> getEquivalentClasses(String toSearch) throws OWLOntologyCreationException;
+	
+	public Set<String> getSubClasses(String toSearch) throws OWLOntologyCreationException;
+	
+	public Set<String> getSuperClasses(String toSearch) throws OWLOntologyCreationException;
 }
