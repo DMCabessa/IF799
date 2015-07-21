@@ -1,5 +1,6 @@
 package facade;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import org.semanticweb.owlapi.model.OWLClass;
@@ -71,10 +72,36 @@ public class OWLFacade {
 		return control.getObjectProperties();
 	}
 
+	public Set<String> getProperties(String type) {
+		Set<String> toReturn = new HashSet<String>();
+		try {
+			if (type.equals("object")) {
+				Set<OWLObjectProperty> properties = getObjectProperties();
+				if (properties != null) {
+					for (OWLObjectProperty p : properties) {
+						toReturn.add(p.getIRI().getFragment());
+					}
+				}
+			} else if (type.equals("data")) {
+				Set<OWLDataProperty> properties = getDataProperties();
+				if (properties != null) {
+					for (OWLDataProperty p : properties) {
+						toReturn.add(p.getIRI().getFragment());
+					}
+				}
+			}
+		} catch (OWLOntologyCreationException e) {
+			
+		}
+		return toReturn;
+	}
+	
 	public Set<OWLDataProperty> getDataProperties()
 			throws OWLOntologyCreationException {
 		return control.getDataProperties();
 	}
+	
+	
 	
 	
 

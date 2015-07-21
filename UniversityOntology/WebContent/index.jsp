@@ -1,4 +1,9 @@
+<%@page import="org.semanticweb.owlapi.model.OWLDataProperty"%>
+<%@page import="java.util.Set"%>
+<%@page import="org.semanticweb.owlapi.model.OWLObjectProperty"%>
 <%@page contentType="text/html; charset=UTF-8" %>
+<%@page import="facade.OWLFacade"%>
+
 <!doctype html>
 <html>
 <head>
@@ -24,6 +29,38 @@
 <script>
 	$(function() {
 		$("#tabs").tabs();
+		$("#insertPropertyButton").click(function() {
+			$.ajax({
+	            type: "POST",
+	            url: "ajax-insert-property",
+				data: {obj1: $("#obj1").val(), obj2: $("#obj2").val(), property: $("#property").val()},
+	            success: function () {
+	                $("#obj1").val("");
+	                $("#obj2").val("");
+	                $("#property").val("0");
+	                $('#successfulInsert').slideDown(100).delay(2000).slideUp(400);
+	            },
+				error: function () {
+					$('#errorInsert').slideDown(100).delay(2000).slideUp(400);
+				}
+	        });
+		})
+		$("#insertDataButton").click(function() {
+			$.ajax({
+	            type: "POST",
+	            url: "ajax-insert-data",
+				data: {obj: $("#obj").val(), attribute: $("#attribute").val(), value: $("#value").val()},
+	            success: function (r) {
+	                $("#obj").val("");
+	                $("#value").val("");
+	                $("#attribute").val("0");
+	                $('#successfulInsert2').slideDown(100).delay(2000).slideUp(400);
+	            },
+	            error: function () {
+					$('#errorInsert2').slideDown(100).delay(2000).slideUp(400);
+				}
+	        });
+		})
 	});
 </script>
 <div class="margin">
@@ -39,24 +76,80 @@
 		</ul>
 		<div id="insert-predicate" class="pure-form">
 			<div class="center pure-u-1">
+				<div id="successfulInsert" style="text-align: center; display: none;">
+					<div class="pure-u-1-3">
+                    	<div class="l-box">
+                        	<div class="alert-success">
+                        		Success!
+                       		</div>
+                		</div>
+                	</div>
+	            </div>
+	            <div id="errorInsert" style="text-align: center; display: none;">
+					<div class="pure-u-1-3">
+                    	<div class="l-box">
+                        	<div class="alert-error">
+                        		Preencha todos os campos!
+                       		</div>
+                		</div>
+                	</div>
+	            </div>
 				<input id="obj1" placeholder="Object">
 				<select id="property">
 					<option value="0">Select a property</option>
-					<!-- adicionar properties como opcoes -->
+					<%
+					Set<OWLObjectProperty> properties = OWLFacade.getInstance().getObjectProperties();
+					if (properties != null) {
+						for (OWLObjectProperty p : properties) {
+							String property = p.getIRI().getFragment();
+							%>
+							<option value="<%=property%>"><%=property%></option>
+						<%	
+						}
+					}
+					%>
 				</select>
 				<input id="obj2" placeholder="Object">
-				<button class="btn-custom btn"><b>Insert</b></button>
+				<button id="insertPropertyButton" class="btn-custom btn"><b>Insert</b></button>
 			</div>
 		</div>
 		<div id="insert-data" class="pure-form">
 			<div class="center pure-u-1">
+				<div id="successfulInsert2" style="text-align: center; display: none;">
+					<div class="pure-u-1-3">
+                    	<div class="l-box">
+                        	<div class="alert-success">
+                        		Success!
+                       		</div>
+                		</div>
+                	</div>
+	            </div>
+	             <div id="errorInsert2" style="text-align: center; display: none;">
+					<div class="pure-u-1-3">
+                    	<div class="l-box">
+                        	<div class="alert-error">
+                        		Preencha todos os campos!
+                       		</div>
+                		</div>
+                	</div>
+	            </div>
 				<input id="obj" placeholder="Object">
 				<select id="attribute">
 					<option value="0">Select an attribute</option>
-					<!-- adicionar attributes como opcoes -->
+					<%
+					Set<OWLDataProperty> data = OWLFacade.getInstance().getDataProperties();
+					if (data != null) {
+						for (OWLDataProperty p : data) {
+							String datum = p.getIRI().getFragment();
+							%>
+							<option value="<%=datum%>"><%=datum%></option>
+						<%	
+						}
+					}
+					%>
 				</select>
-				<input id="attr-value" placeholder="Value">
-				<button class="btn-custom btn">Insert</button>
+				<input id="value" placeholder="Value">
+				<button id="insertDataButton" class="btn-custom btn">Insert</button>
 			</div>
 		</div>
 		<div id="search">
