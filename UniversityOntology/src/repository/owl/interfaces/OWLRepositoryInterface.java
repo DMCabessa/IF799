@@ -6,6 +6,7 @@ import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataProperty;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLLiteral;
+import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
@@ -22,11 +23,11 @@ public interface OWLRepositoryInterface {
 	
 	public Set<OWLDataProperty> getDataProperties() throws OWLOntologyCreationException;
 
-	public Set<String> getIndividuals(String toSearch) throws OWLOntologyCreationException;
+	public Set<OWLNamedIndividual> getIndividuals(String toSearch) throws OWLOntologyCreationException;
 	
-	public Set<String> getEquivalentClasses(String toSearch) throws OWLOntologyCreationException;
+	public Set<OWLClass> getEquivalentClasses(String toSearch) throws OWLOntologyCreationException;
 	
-	public Set<String> getSubClasses(String toSearch) throws OWLOntologyCreationException;
+	public Set<OWLClass> getSubClasses(String toSearch) throws OWLOntologyCreationException;
 	
-	public Set<String> getSuperClasses(String toSearch) throws OWLOntologyCreationException;
+	public Set<OWLClass> getSuperClasses(String toSearch) throws OWLOntologyCreationException;
 }

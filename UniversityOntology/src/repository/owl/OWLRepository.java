@@ -10,6 +10,7 @@ import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLLiteral;
+import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
@@ -85,40 +86,40 @@ public class OWLRepository implements OWLRepositoryInterface{
 		return o.getDataPropertiesInSignature();
 	}
 	
-	public Set<String> getSuperClasses(String toSearch) throws OWLOntologyCreationException {
+	public Set<OWLClass> getSuperClasses(String toSearch) throws OWLOntologyCreationException {
 		OWLOntologyManager m = Util.create();
 		OWLOntology o = m.loadOntologyFromOntologyDocument(Constants.PROJECT_IRI);
 		OWLReasoner r = new Reasoner.ReasonerFactory().createReasoner(o);
 		ShortFormProvider shortFormProvider = new SimpleShortFormProvider();
 		DLQueryPrinter dlQueryPrinter = new DLQueryPrinter(new DLQueryEngine(r, shortFormProvider), shortFormProvider);
-		return dlQueryPrinter.toString(dlQueryPrinter.getSuperClasses(toSearch.trim()));
+		return dlQueryPrinter.getSuperClasses(toSearch.trim());
 	}
 	
-	public Set<String> getSubClasses(String toSearch) throws OWLOntologyCreationException {
+	public Set<OWLClass> getSubClasses(String toSearch) throws OWLOntologyCreationException {
 		OWLOntologyManager m = Util.create();
 		OWLOntology o = m.loadOntologyFromOntologyDocument(Constants.PROJECT_IRI);
 		OWLReasoner r = new Reasoner.ReasonerFactory().createReasoner(o);
 		ShortFormProvider shortFormProvider = new SimpleShortFormProvider();
 		DLQueryPrinter dlQueryPrinter = new DLQueryPrinter(new DLQueryEngine(r, shortFormProvider), shortFormProvider);
-		return dlQueryPrinter.toString(dlQueryPrinter.getSubClasses(toSearch.trim()));
+		return dlQueryPrinter.getSubClasses(toSearch.trim());
 	}
 	
-	public Set<String> getEquivalentClasses(String toSearch) throws OWLOntologyCreationException {
+	public Set<OWLClass> getEquivalentClasses(String toSearch) throws OWLOntologyCreationException {
 		OWLOntologyManager m = Util.create();
 		OWLOntology o = m.loadOntologyFromOntologyDocument(Constants.PROJECT_IRI);
 		OWLReasoner r = new Reasoner.ReasonerFactory().createReasoner(o);
 		ShortFormProvider shortFormProvider = new SimpleShortFormProvider();
 		DLQueryPrinter dlQueryPrinter = new DLQueryPrinter(new DLQueryEngine(r, shortFormProvider), shortFormProvider);
-		return dlQueryPrinter.toString(dlQueryPrinter.getEquivalentClasses(toSearch.trim()));
+		return dlQueryPrinter.getEquivalentClasses(toSearch.trim());
 	}
 	
-	public Set<String> getIndividuals(String toSearch) throws OWLOntologyCreationException {
+	public Set<OWLNamedIndividual> getIndividuals(String toSearch) throws OWLOntologyCreationException {
 		OWLOntologyManager m = Util.create();
 		OWLOntology o = m.loadOntologyFromOntologyDocument(Constants.PROJECT_IRI);
 		OWLReasoner r = new Reasoner.ReasonerFactory().createReasoner(o);
 		ShortFormProvider shortFormProvider = new SimpleShortFormProvider();
 		DLQueryPrinter dlQueryPrinter = new DLQueryPrinter(new DLQueryEngine(r, shortFormProvider), shortFormProvider);
-		return dlQueryPrinter.toString(dlQueryPrinter.getIndividuals(toSearch.trim()));
+		return dlQueryPrinter.getIndividuals(toSearch.trim());
 	}
 	
 	

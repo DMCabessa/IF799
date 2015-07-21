@@ -8,6 +8,7 @@ import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLLiteral;
+import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
@@ -131,19 +132,19 @@ public class OWLControl {
 		return repository.getDataProperties();
 	}
 
-	public Set<String> getSuperClasses(String toSearch) throws OWLOntologyCreationException {
+	public Set<OWLClass> getSuperClasses(String toSearch) throws OWLOntologyCreationException {
 		return repository.getSuperClasses(toSearch);
 	}
 	
-	public Set<String> getSubClasses(String toSearch) throws OWLOntologyCreationException {
+	public Set<OWLClass> getSubClasses(String toSearch) throws OWLOntologyCreationException {
 		return repository.getSubClasses(toSearch);
 	}
 	
-	public Set<String> getEquivalentClasses(String toSearch) throws OWLOntologyCreationException {
+	public Set<OWLClass> getEquivalentClasses(String toSearch) throws OWLOntologyCreationException {
 		return repository.getEquivalentClasses(toSearch);
 	}
 	
-	public Set<String> getIndividuals(String toSearch) throws OWLOntologyCreationException {
+	public Set<OWLNamedIndividual> getIndividuals(String toSearch) throws OWLOntologyCreationException {
 		return repository.getIndividuals(toSearch);
 	}
 	

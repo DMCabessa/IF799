@@ -5,6 +5,7 @@ import java.util.Set;
 
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataProperty;
+import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
@@ -78,19 +79,19 @@ public class OWLFacade {
 		return control.getDataProperties();
 	}
 	
-	public Set<String> getIndividuals(String toSearch) throws OWLOntologyCreationException {
+	public Set<OWLNamedIndividual> getIndividuals(String toSearch) throws OWLOntologyCreationException {
 		return control.getIndividuals(toSearch);
 	}
 	
-	public Set<String> getSuperClasses(String toSearch) throws OWLOntologyCreationException {
+	public Set<OWLClass> getSuperClasses(String toSearch) throws OWLOntologyCreationException {
 		return control.getSuperClasses(toSearch);
 	}
 	
-	public Set<String> getSubClasses(String toSearch) throws OWLOntologyCreationException {
+	public Set<OWLClass> getSubClasses(String toSearch) throws OWLOntologyCreationException {
 		return control.getSubClasses(toSearch);
 	}
 	
-	public Set<String> getEquivalentClasses(String toSearch) throws OWLOntologyCreationException {
+	public Set<OWLClass> getEquivalentClasses(String toSearch) throws OWLOntologyCreationException {
 		return control.getEquivalentClasses(toSearch);
 	}
 	
