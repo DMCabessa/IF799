@@ -696,7 +696,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Student"/>
-        <Class IRI="#Publisher"/>
+        <Class IRI="#Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SubstituteProfessor"/>
@@ -3200,6 +3200,10 @@ COMPLEX SYSTEMS</Literal>
         <Class IRI="#Article"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#studies"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#submits"/>
         <Class IRI="#AcademicMember"/>
     </ObjectPropertyDomain>
@@ -3237,6 +3241,10 @@ COMPLEX SYSTEMS</Literal>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#publishedAt"/>
         <Class IRI="#Publisher"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#studies"/>
+        <Class IRI="#Faculty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#submits"/>
