@@ -344,6 +344,9 @@
         <NamedIndividual IRI="#asg"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#bdln"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#bfl"/>
     </Declaration>
     <Declaration>
@@ -377,10 +380,22 @@
         <NamedIndividual IRI="#dcunha"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#dissertation001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#doctoralThesis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#drc2"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#eagt"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ecdbcf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#emn"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ensb"/>
@@ -404,6 +419,9 @@
         <NamedIndividual IRI="#fred"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ftm"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#gcv"/>
     </Declaration>
     <Declaration>
@@ -425,6 +443,9 @@
         <NamedIndividual IRI="#igcf"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#jal3"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#jamel"/>
     </Declaration>
     <Declaration>
@@ -435,6 +456,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#jmi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#journal001"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#katiag"/>
@@ -458,10 +482,16 @@
         <NamedIndividual IRI="#mac"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#magazine001"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#mel"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#mlc2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#npvc"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#nsr"/>
@@ -474,6 +504,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#paper001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#paper002"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#pasg"/>
@@ -530,6 +563,12 @@
         <NamedIndividual IRI="#rv2"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#rvsa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rvsa2"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#sbm"/>
     </Declaration>
     <Declaration>
@@ -563,10 +602,16 @@
         <NamedIndividual IRI="#tir"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#tpls"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#vcg"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#vct"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vfp"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#vt"/>
@@ -651,7 +696,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Student"/>
-        <Class IRI="#Person"/>
+        <Class IRI="#Publisher"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SubstituteProfessor"/>
@@ -898,6 +943,10 @@
         <NamedIndividual IRI="#asg"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#BachelorsDegreeStudent"/>
+        <NamedIndividual IRI="#bdln"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AdjunctProfessor"/>
         <NamedIndividual IRI="#bfl"/>
     </ClassAssertion>
@@ -942,12 +991,28 @@
         <NamedIndividual IRI="#dcunha"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Dissertation"/>
+        <NamedIndividual IRI="#dissertation001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DoctoralThesis"/>
+        <NamedIndividual IRI="#doctoralThesis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BachelorsDegreeStudent"/>
+        <NamedIndividual IRI="#drc2"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AdjunctProfessor"/>
         <NamedIndividual IRI="#eagt"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AdjunctProfessor"/>
         <NamedIndividual IRI="#ecdbcf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BachelorsDegreeStudent"/>
+        <NamedIndividual IRI="#emn"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#FullProfessor"/>
@@ -978,6 +1043,10 @@
         <NamedIndividual IRI="#fred"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#BachelorsDegreeStudent"/>
+        <NamedIndividual IRI="#ftm"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AdjunctProfessor"/>
         <NamedIndividual IRI="#gcv"/>
     </ClassAssertion>
@@ -1006,6 +1075,10 @@
         <NamedIndividual IRI="#igcf"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#BachelorsDegreeStudent"/>
+        <NamedIndividual IRI="#jal3"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AssociateProfessor"/>
         <NamedIndividual IRI="#jamel"/>
     </ClassAssertion>
@@ -1020,6 +1093,10 @@
     <ClassAssertion>
         <Class IRI="#AdjunctProfessor"/>
         <NamedIndividual IRI="#jmi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Journal"/>
+        <NamedIndividual IRI="#journal001"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AssociateProfessor"/>
@@ -1050,12 +1127,20 @@
         <NamedIndividual IRI="#mac"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Magazine"/>
+        <NamedIndividual IRI="#magazine001"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AdjunctProfessor"/>
         <NamedIndividual IRI="#mel"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AdjunctProfessor"/>
         <NamedIndividual IRI="#mlc2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BachelorsDegreeStudent"/>
+        <NamedIndividual IRI="#npvc"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AssociateProfessor"/>
@@ -1072,6 +1157,10 @@
     <ClassAssertion>
         <Class IRI="#Paper"/>
         <NamedIndividual IRI="#paper001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Paper"/>
+        <NamedIndividual IRI="#paper002"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AdjunctProfessor"/>
@@ -1146,6 +1235,14 @@
         <NamedIndividual IRI="#rv2"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#BachelorsDegreeStudent"/>
+        <NamedIndividual IRI="#rvsa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BachelorsDegreeStudent"/>
+        <NamedIndividual IRI="#rvsa2"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AdjunctProfessor"/>
         <NamedIndividual IRI="#sbm"/>
     </ClassAssertion>
@@ -1190,12 +1287,20 @@
         <NamedIndividual IRI="#tir"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#BachelorsDegreeStudent"/>
+        <NamedIndividual IRI="#tpls"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AdjunctProfessor"/>
         <NamedIndividual IRI="#vcg"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AdjunctProfessor"/>
         <NamedIndividual IRI="#vct"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BachelorsDegreeStudent"/>
+        <NamedIndividual IRI="#vfp"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#AdjunctProfessor"/>
@@ -1303,12 +1408,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#unitOf"/>
         <NamedIndividual IRI="#IF670"/>
-        <NamedIndividual IRI="#ComputerScience"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#unitOf"/>
         <NamedIndividual IRI="#IF670"/>
-        <NamedIndividual IRI="#ComputerEngineering"/>
+        <NamedIndividual IRI="#ComputerScience"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#unitOf"/>
@@ -1552,8 +1657,148 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#aams"/>
+        <NamedIndividual IRI="#IF817"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#aams"/>
+        <NamedIndividual IRI="#IF674"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#acs"/>
+        <NamedIndividual IRI="#IF685"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#ago"/>
+        <NamedIndividual IRI="#IF673"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
         <NamedIndividual IRI="#ago"/>
         <NamedIndividual IRI="#IF670"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#agsf"/>
+        <NamedIndividual IRI="#IF675"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#asg"/>
+        <NamedIndividual IRI="#IF681"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergraduate"/>
+        <NamedIndividual IRI="#bdln"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#cagf"/>
+        <NamedIndividual IRI="#IF677"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#damorim"/>
+        <NamedIndividual IRI="#IF688"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <NamedIndividual IRI="#dissertation001"/>
+        <NamedIndividual IRI="#fdfd"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#publishedAt"/>
+        <NamedIndividual IRI="#dissertation001"/>
+        <NamedIndividual IRI="#journal001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <NamedIndividual IRI="#doctoralThesis"/>
+        <NamedIndividual IRI="#tir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergraduate"/>
+        <NamedIndividual IRI="#drc2"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#eagt"/>
+        <NamedIndividual IRI="#IF677"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#ecdbcf"/>
+        <NamedIndividual IRI="#IF674"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergraduate"/>
+        <NamedIndividual IRI="#emn"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#fdfd"/>
+        <NamedIndividual IRI="#IF685"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#fjclf"/>
+        <NamedIndividual IRI="#IF686"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergraduate"/>
+        <NamedIndividual IRI="#ftm"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#gcv"/>
+        <NamedIndividual IRI="#IF690"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#glr"/>
+        <NamedIndividual IRI="#IF683"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergraduate"/>
+        <NamedIndividual IRI="#jal3"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#jmi"/>
+        <NamedIndividual IRI="#IF670"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#katiag"/>
+        <NamedIndividual IRI="#IF672"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#mel"/>
+        <NamedIndividual IRI="#IF675"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergraduate"/>
+        <NamedIndividual IRI="#npvc"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#odilon"/>
+        <NamedIndividual IRI="#IF819"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#paguso"/>
+        <NamedIndividual IRI="#IF689"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAuthor"/>
@@ -1566,9 +1811,34 @@
         <NamedIndividual IRI="#book001"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAuthor"/>
+        <NamedIndividual IRI="#paper002"/>
+        <NamedIndividual IRI="#fred"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#publishedAt"/>
+        <NamedIndividual IRI="#paper002"/>
+        <NamedIndividual IRI="#magazine001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#pcart"/>
+        <NamedIndividual IRI="#IF676"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#phmb"/>
+        <NamedIndividual IRI="#IF682"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#teaches"/>
         <NamedIndividual IRI="#psgmn"/>
         <NamedIndividual IRI="#MA531"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#rdnf"/>
+        <NamedIndividual IRI="#IF685"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#teaches"/>
@@ -1577,8 +1847,28 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#rmcrs"/>
+        <NamedIndividual IRI="#ET586"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
         <NamedIndividual IRI="#rmfl"/>
         <NamedIndividual IRI="#IF669"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#ruy"/>
+        <NamedIndividual IRI="#IF673"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergraduate"/>
+        <NamedIndividual IRI="#rvsa"/>
+        <NamedIndividual IRI="#ComputerEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergraduate"/>
+        <NamedIndividual IRI="#rvsa2"/>
+        <NamedIndividual IRI="#ComputerScience"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#teaches"/>
@@ -1592,8 +1882,38 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#srmq"/>
+        <NamedIndividual IRI="#IF684"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#suruagy"/>
+        <NamedIndividual IRI="#IF678"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#tir"/>
+        <NamedIndividual IRI="#ET586"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergraduate"/>
+        <NamedIndividual IRI="#tpls"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergraduate"/>
+        <NamedIndividual IRI="#vfp"/>
+        <NamedIndividual IRI="#ComputerScience"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
         <NamedIndividual IRI="#vt"/>
         <NamedIndividual IRI="#IF668"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#vt"/>
+        <NamedIndividual IRI="#IF680"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#academicTerm"/>
@@ -2342,6 +2662,11 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#bdln"/>
+        <Literal datatypeIRI="&xsd;string">Bruno Dutra de Lemos Neto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
         <NamedIndividual IRI="#bfl"/>
         <Literal datatypeIRI="&xsd;string">Bernadette Farias Lóscio</Literal>
     </DataPropertyAssertion>
@@ -2397,6 +2722,33 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#dissertation001"/>
+        <Literal datatypeIRI="&xsd;string">SERVIÇOS PARA INTERCONEXÃO DE DISPOSITIVOS MÓVEIS EM PROTOCOLOS DE COMUNICAÇÃO DISTINTOS ATRAVÉS DE UMA ARQUITETURA ORIENTADA A SERVIÇOS NO GINGA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearPublished"/>
+        <NamedIndividual IRI="#dissertation001"/>
+        <Literal datatypeIRI="&xsd;integer">2010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#doctoralThesis"/>
+        <Literal datatypeIRI="&xsd;string">PATTERN RECOGNITION
+AND
+COMPLEX SYSTEMS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearPublished"/>
+        <NamedIndividual IRI="#doctoralThesis"/>
+        <Literal datatypeIRI="&xsd;integer">2000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#drc2"/>
+        <Literal datatypeIRI="&xsd;string">Diogo Rodrigues Cabral</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
         <NamedIndividual IRI="#eagt"/>
         <Literal datatypeIRI="&xsd;string">Eduardo Antônio Guimarães Tavares</Literal>
     </DataPropertyAssertion>
@@ -2404,6 +2756,11 @@
         <DataProperty IRI="#fullName"/>
         <NamedIndividual IRI="#ecdbcf"/>
         <Literal datatypeIRI="&xsd;string">Edson Costa de Barros Carvalho Filho</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#emn"/>
+        <Literal datatypeIRI="&xsd;string">Ezequiel Matos Neto</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#fullName"/>
@@ -2442,6 +2799,11 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#ftm"/>
+        <Literal datatypeIRI="&xsd;string">Felipe Torres Magalhaes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
         <NamedIndividual IRI="#gcv"/>
         <Literal datatypeIRI="&xsd;string">Germano Crispim Vasconcelos</Literal>
     </DataPropertyAssertion>
@@ -2477,6 +2839,11 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#jal3"/>
+        <Literal datatypeIRI="&xsd;string">Jonas de Araujo Lins</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
         <NamedIndividual IRI="#jamel"/>
         <Literal datatypeIRI="&xsd;string">Djamel Fawzi Hadj Sadok</Literal>
     </DataPropertyAssertion>
@@ -2494,6 +2861,11 @@
         <DataProperty IRI="#fullName"/>
         <NamedIndividual IRI="#jmi"/>
         <Literal datatypeIRI="&xsd;string">Juliano Manabu Iyoda</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#journal001"/>
+        <Literal datatypeIRI="&xsd;string">btdt</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#fullName"/>
@@ -2532,6 +2904,11 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#magazine001"/>
+        <Literal datatypeIRI="&xsd;string">Liinc</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
         <NamedIndividual IRI="#mel"/>
         <Literal datatypeIRI="&xsd;string">Manoel Eusébio de Lima</Literal>
     </DataPropertyAssertion>
@@ -2539,6 +2916,11 @@
         <DataProperty IRI="#fullName"/>
         <NamedIndividual IRI="#mlc2"/>
         <Literal datatypeIRI="&xsd;string">Márcio Lopes Cornélio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#npvc"/>
+        <Literal datatypeIRI="&xsd;string">Natalia Paola de Vasconcelos Cometti</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#fullName"/>
@@ -2564,6 +2946,16 @@
         <DataProperty IRI="#yearPublished"/>
         <NamedIndividual IRI="#paper001"/>
         <Literal datatypeIRI="&xsd;integer">2003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#paper002"/>
+        <Literal datatypeIRI="&xsd;string">INFOARCH: UMA ONTOLOGIA PARA MODELAR O DOMÍNIO DA ARQUITETURA DA INFORMAÇÃO PARA WEB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#yearPublished"/>
+        <NamedIndividual IRI="#paper002"/>
+        <Literal datatypeIRI="&xsd;integer">2011</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#fullName"/>
@@ -2618,7 +3010,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#fullName"/>
         <NamedIndividual IRI="#rdnf"/>
-        <Literal datatypeIRI="&xsd;string">Roberson do Nascimento Fidalgo</Literal>
+        <Literal datatypeIRI="&xsd;string">Robson do Nascimento Fidalgo</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#fullName"/>
@@ -2654,6 +3046,16 @@
         <DataProperty IRI="#fullName"/>
         <NamedIndividual IRI="#rv2"/>
         <Literal datatypeIRI="&xsd;string">Renato Vimieiro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#rvsa"/>
+        <Literal datatypeIRI="&xsd;string">Rebeca Vasconcelos de Sa Alencar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#rvsa2"/>
+        <Literal datatypeIRI="&xsd;string">Rayana Vasconcelos de Sa Alencar</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#fullName"/>
@@ -2712,6 +3114,11 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#tpls"/>
+        <Literal datatypeIRI="&xsd;string">Tulio Paulo Lages da Silva</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
         <NamedIndividual IRI="#vcg"/>
         <Literal datatypeIRI="&xsd;string">Vinícius Cardoso Garcia</Literal>
     </DataPropertyAssertion>
@@ -2719,6 +3126,11 @@
         <DataProperty IRI="#fullName"/>
         <NamedIndividual IRI="#vct"/>
         <Literal datatypeIRI="&xsd;string">Valéria Casário Times</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullName"/>
+        <NamedIndividual IRI="#vfp"/>
+        <Literal datatypeIRI="&xsd;string">Victor Felix Pimenta</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#fullName"/>
