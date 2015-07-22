@@ -24,3 +24,8 @@ hr {
 ul {
 	margin-bottom: 0;
 }
+
+thead {
+	background-color: #A10D0D;
+	color: white;
+}

@@ -1,3 +1,5 @@
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.Hashtable"%>
 <%@page import="util.Util"%>
 <%@page import="util.dlquery.DLQueryEngine"%>
 <%@page import="org.semanticweb.owlapi.model.OWLClass"%>
@@ -24,14 +26,62 @@ try {
 	if (equivalentClasses != null) {
 		equivalentClassesString = Util.toString(equivalentClasses);
 	}
-	Set<OWLNamedIndividual> individuals = OWLFacade.getInstance().getIndividuals(toSearch);
 	%>
 	<ul style="text-align: left; margin-top: 2%">
 		<li><b>Superclasses:</b> <%=superClassesString %></li>
 		<li><b>Subclasses:</b> <%=subClassesString %></li>
 		<li><b>Equivalent classes:</b> <%=equivalentClassesString %></li>
 	</ul>
+	<%
+	Set<OWLNamedIndividual> individuals = OWLFacade.getInstance().getIndividuals(toSearch);
+	if (individuals != null) {
+	%>
+	<div class="center pure-u-2-3" style="margin-top: 2%">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th class="center">Id</th>
+					<th colspan="2" class="center">Attributes</th>
+				</tr>
+			</thead>
+			<tbody>
+			<%
+				//boolean odd = true;
+				for (OWLNamedIndividual individual : individuals) {
+					Hashtable<String, String> hashtable = OWLFacade.getInstance().getDataProperties(individual);
+					Iterator<String> keysIt = hashtable.keySet().iterator();
+			%>
+					<tr>
+						<td rowspan="<%=hashtable.size()%>"><%=individual.getIRI().getFragment() %></td>
+						<%if (keysIt.hasNext()) { 
+							String key = keysIt.next();
+						%>
+						<td><%=key %></td>
+						<td><%=hashtable.get(key) %></td>
+						<%} %>
+					</tr>
+					<%
+					while (keysIt.hasNext()) {
+						String key = keysIt.next();
+						
+					%>
+					<tr>
+						<td><%=key %></td>
+						<td><%=hashtable.get(key) %></td>
+					</tr>
+					<%
+					}
+					%>	
+							
+								
+			<%
+				}
+			%>
+			</tbody>
+		</table>
+	</div>
 <%
+	}
 } catch (Exception e) {
 	
 }
