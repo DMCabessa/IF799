@@ -1996,7 +1996,7 @@
         <Literal datatypeIRI="&xsd;integer">45</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#credit"/>
+        <DataProperty IRI="#fullName"/>
         <NamedIndividual IRI="#IF681"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Interfaces Usuário-Máquina</Literal>
     </DataPropertyAssertion>
