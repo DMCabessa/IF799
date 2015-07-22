@@ -1,5 +1,6 @@
 package repository.owl;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import org.semanticweb.HermiT.Reasoner;
@@ -136,12 +137,11 @@ public class OWLRepository implements OWLRepositoryInterface{
 		OWLOntology o = m.loadOntologyFromOntologyDocument(Constants.PROJECT_IRI);
 		
 		Set<OWLNamedIndividual> individuals = o.getIndividualsInSignature();
-		Set<OWLDataPropertyAssertionAxiom> axioms = null;
+		Set<OWLDataPropertyAssertionAxiom> axioms = new HashSet<OWLDataPropertyAssertionAxiom>();
 		
 		for(OWLNamedIndividual i : individuals){
 			Set<OWLDataPropertyAssertionAxiom> properties = o.getDataPropertyAssertionAxioms(i);
-			if(axioms == null) axioms = properties;
-			else axioms.addAll(properties);
+			axioms.addAll(properties);
 		}
 		
 		return axioms;
@@ -152,12 +152,11 @@ public class OWLRepository implements OWLRepositoryInterface{
 		OWLOntology o = m.loadOntologyFromOntologyDocument(Constants.PROJECT_IRI);
 		
 		Set<OWLNamedIndividual> individuals = o.getIndividualsInSignature();
-		Set<OWLObjectPropertyAssertionAxiom> axioms = null;
+		Set<OWLObjectPropertyAssertionAxiom> axioms = new HashSet<OWLObjectPropertyAssertionAxiom>(); 
 		
 		for(OWLNamedIndividual i : individuals){
 			Set<OWLObjectPropertyAssertionAxiom> properties = o.getObjectPropertyAssertionAxioms(i);
-			if(axioms == null) axioms = properties;
-			else axioms.addAll(properties);
+			axioms.addAll(properties);
 		}
 		
 		return axioms;

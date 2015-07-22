@@ -15,3 +15,12 @@
 .margin {
 	margin: 2em 5em;
 }
+
+hr {
+	border-style: inset;
+    border-width: 1px;
+}
+
+ul {
+	margin-bottom: 0;
+}

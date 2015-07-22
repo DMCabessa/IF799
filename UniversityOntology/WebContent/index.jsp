@@ -1,3 +1,5 @@
+<%@page import="org.semanticweb.owlapi.model.OWLDataPropertyAssertionAxiom"%>
+<%@page import="org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom"%>
 <%@page import="org.semanticweb.owlapi.model.OWLDataProperty"%>
 <%@page import="java.util.Set"%>
 <%@page import="org.semanticweb.owlapi.model.OWLObjectProperty"%>
@@ -81,6 +83,30 @@
 	            }
 	        });
 		})
+		
+		var dataList = $('#invisibleData');
+		dataList.hide();
+		$('#show-all-data').click(function() {
+	        dataList.slideToggle(1000);
+	        if($('#show-all-data').html() == 'Show all'){
+	        	$('#show-all-data').html('Hide');	
+	        }else{
+	        	$('#show-all-data').html('Show all');
+	        }
+	        return false;
+        });
+		
+		var objectList = $('#invisibleObjects');
+		objectList.hide();
+		$('#show-all-objects').click(function() {
+	        objectList.slideToggle(1000);
+	        if($('#show-all-objects').html() == 'Show all'){
+	        	$('#show-all-objects').html('Hide');	
+	        }else{
+	        	$('#show-all-objects').html('Show all');
+	        }
+	        return false;
+        });
 	});
 </script>
 <div class="margin">
@@ -132,6 +158,33 @@
 				<input id="obj2" placeholder="Object">
 				<button id="insertPropertyButton" class="btn-custom btn"><b>Insert</b></button>
 			</div>
+			<hr/>
+			<div class="pure-u-1">
+				<h4>Previous insertions:</h4>
+					<%
+						int ulCount = 0;
+						Set<OWLObjectPropertyAssertionAxiom> opaxioms = OWLFacade.getInstance().getAllObjectProperties();
+						for(OWLObjectPropertyAssertionAxiom opaa : opaxioms){
+							if(ulCount == 0){%>
+								<ul id="visibleObjects">							
+							<%}
+							if(ulCount == 5){%>
+								</ul>
+								<ul id="invisibleObjects">							
+							<%}
+							String subject = opaa.getSubject().asOWLNamedIndividual().getIRI().getFragment();
+							String property = opaa.getProperty().asOWLObjectProperty().getIRI().getFragment();
+							String object = opaa.getObject().asOWLNamedIndividual().getIRI().getFragment();
+							%>
+									<li><%=subject %> <b><%=property %></b> <%=object %></li>				
+							<%
+							ulCount++;
+						}
+					%>
+				</ul>
+				<hr/>
+				<button id="show-all-objects" class="btn-custom btn">Show all</button>
+			</div>
 		</div>
 		<div id="insert-data" class="pure-form">
 			<div class="center pure-u-1">
@@ -170,6 +223,33 @@
 				</select>
 				<input id="value" placeholder="Value">
 				<button id="insertDataButton" class="btn-custom btn"><b>Insert</b></button>
+			</div>
+			<hr/>
+			<div class="pure-u-1">
+				<h4>Previous insertions:</h4>
+					<%
+						ulCount = 0;
+						Set<OWLDataPropertyAssertionAxiom> dpaxioms = OWLFacade.getInstance().getAllDataProperties();
+						for(OWLDataPropertyAssertionAxiom dpaa : dpaxioms){
+							if(ulCount == 0){%>
+								<ul id="visibleData">							
+							<%}
+							if(ulCount == 5){%>
+								</ul>
+								<ul id="invisibleData">							
+							<%}
+							String subject = dpaa.getSubject().asOWLNamedIndividual().getIRI().getFragment();
+							String property = dpaa.getProperty().asOWLDataProperty().getIRI().getFragment();
+							String object = dpaa.getObject().getLiteral();
+							%>
+								<li><%=subject %> <b><%=property %></b> <%=object %></li>							
+							<%
+							ulCount++;
+						}
+					%>
+				</ul>
+				<hr/>
+				<button id="show-all-data" class="btn-custom btn">Show all</button>
 			</div>
 		</div>
 		<div id="search" class="pure-form">

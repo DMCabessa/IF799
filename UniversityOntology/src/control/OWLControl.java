@@ -156,7 +156,7 @@ public class OWLControl {
 		
 		Hashtable<String, String> table = new Hashtable<String, String>();
 		for(OWLDataPropertyAssertionAxiom dpaa : properties){
-			table.put(dpaa.getProperty().asOWLDataProperty().getIRI().getFragment(), dpaa.getObject().toString());
+			table.put(dpaa.getProperty().asOWLDataProperty().getIRI().getFragment(), dpaa.getObject().getLiteral());
 		}
 		
 		return table;
