@@ -41,65 +41,13 @@ public class OWLControl {
 		OWLDataFactory df = Constants.DATA_FACTORY;
 		
 		OWLIndividual source = df.getOWLNamedIndividual(
-		IRI.create(sourceName));
+		IRI.create("#" + sourceName));
 		OWLIndividual target = df.getOWLNamedIndividual(
-		IRI.create(targetName));
+		IRI.create("#" + targetName));
 		OWLObjectProperty property = df.getOWLObjectProperty(
-		IRI.create(propertyName));
+		IRI.create("#" + propertyName));
 		
 		repository.insertObjectProperty(property, source, target);
-	}
-	
-	public void insertDataProperty(String propertyName, String sourceName, boolean value)
-			throws OWLOntologyCreationException, OWLOntologyStorageException {
-		OWLDataFactory df = Constants.DATA_FACTORY;
-		
-		OWLIndividual source = df.getOWLNamedIndividual(
-		IRI.create(sourceName));
-		OWLDataProperty property = df.getOWLDataProperty(
-		IRI.create(propertyName));
-		OWLLiteral literal = df.getOWLLiteral(value);
-		
-		repository.insertDataProperty(property, source, literal);
-	}
-	
-	public void insertDataProperty(String propertyName, String sourceName, double value)
-			throws OWLOntologyCreationException, OWLOntologyStorageException {
-		OWLDataFactory df = Constants.DATA_FACTORY;
-		
-		OWLIndividual source = df.getOWLNamedIndividual(
-		IRI.create(sourceName));
-		OWLDataProperty property = df.getOWLDataProperty(
-		IRI.create(propertyName));
-		OWLLiteral literal = df.getOWLLiteral(value);
-		
-		repository.insertDataProperty(property, source, literal);
-	}
-	
-	public void insertDataProperty(String propertyName, String sourceName, float value)
-			throws OWLOntologyCreationException, OWLOntologyStorageException {
-		OWLDataFactory df = Constants.DATA_FACTORY;
-		
-		OWLIndividual source = df.getOWLNamedIndividual(
-		IRI.create(sourceName));
-		OWLDataProperty property = df.getOWLDataProperty(
-		IRI.create(propertyName));
-		OWLLiteral literal = df.getOWLLiteral(value);
-		
-		repository.insertDataProperty(property, source, literal);
-	}
-	
-	public void insertDataProperty(String propertyName, String sourceName, int value)
-			throws OWLOntologyCreationException, OWLOntologyStorageException {
-		OWLDataFactory df = Constants.DATA_FACTORY;
-		
-		OWLIndividual source = df.getOWLNamedIndividual(
-		IRI.create(sourceName));
-		OWLDataProperty property = df.getOWLDataProperty(
-		IRI.create(propertyName));
-		OWLLiteral literal = df.getOWLLiteral(value);
-		
-		repository.insertDataProperty(property, source, literal);
 	}
 	
 	public void insertDataProperty(String propertyName, String sourceName, String value)
@@ -108,15 +56,23 @@ public class OWLControl {
 		OWLDataFactory df = Constants.DATA_FACTORY;
 		
 		OWLIndividual source = df.getOWLNamedIndividual(
-		IRI.create(sourceName));
+		IRI.create("#" + sourceName));
 		OWLDataProperty property = df.getOWLDataProperty(
-		IRI.create(propertyName));
+		IRI.create("#" + propertyName));
 		OWLLiteral literal;
 		try {
 			int intValue = Integer.parseInt(value);
 			literal = df.getOWLLiteral(intValue);
 		} catch (NumberFormatException e) {
-			literal = df.getOWLLiteral(value);
+			if(value.equalsIgnoreCase("true")){
+				boolean boolValue = true;
+				literal = df.getOWLLiteral(boolValue);
+			}else if(value.equalsIgnoreCase("false")){
+				boolean boolValue = false;
+				literal = df.getOWLLiteral(boolValue);
+			}else{
+				literal = df.getOWLLiteral(value);
+			}
 		}		
 		repository.insertDataProperty(property, source, literal);
 	}

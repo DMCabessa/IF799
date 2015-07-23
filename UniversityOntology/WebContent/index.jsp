@@ -47,12 +47,13 @@
 		            type: "POST",
 		            url: "ajax-insert-property",
 					data: {obj1: $("#obj1").val(), obj2: $("#obj2").val(), property: $("#property").val()},
-		            success: function () {
+		            success: function (r) {
 		                $("#obj1").val("");
 		                $("#obj2").val("");
 		                $("#property").val("0");
-		                $('#successfulInsert').slideDown(100).delay(2000).slideUp(400);
-		            }
+		                $('#message').html(r).slideDown(100).delay(2000).slideUp(400); 
+		            },
+		            
 		        });
 			}
 		})
@@ -122,14 +123,7 @@
 		</ul>
 		<div id="insert-predicate" class="pure-form">
 			<div class="center pure-u-1">
-				<div id="successfulInsert" style="text-align: center; display: none;">
-					<div class="pure-u-1-3">
-                    	<div class="l-box">
-                        	<div class="alert-success" style="margin-bottom: 2%">
-                        		Success!
-                       		</div>
-                		</div>
-                	</div>
+				<div id="message" style="text-align: center;">	
 	            </div>
 	            <div id="errorInsert" style="text-align: center; display: none;">
 					<div class="pure-u-1-3">
@@ -140,6 +134,7 @@
                 		</div>
                 	</div>
 	            </div>
+	            <div id="inconsistency"></div>
 				<input id="obj1" placeholder="Object">
 				<select id="property">
 					<option value="0">Select a property</option>

@@ -3,7 +3,9 @@ package repository.owl;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.semanticweb.HermiT.Configuration;
 import org.semanticweb.HermiT.Reasoner;
+import org.semanticweb.HermiT.Reasoner.ReasonerFactory;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
@@ -54,7 +56,11 @@ public class OWLRepository implements OWLRepositoryInterface{
 		OWLAxiom assertion = df.getOWLObjectPropertyAssertionAxiom(property, source, target);
 		m.addAxiom(o, assertion);
 		
-		m.saveOntology(o);
+		OWLReasoner r = new Reasoner.ReasonerFactory().createNonBufferingReasoner(o);
+		System.out.println(!r.isConsistent());
+		System.out.println(r.getUnsatisfiableClasses().getEntitiesMinusBottom().size()>0);
+		
+		//m.saveOntology(o);
 	}
 	
 	public void insertDataProperty(OWLDataProperty property, OWLIndividual source, OWLLiteral literal) throws OWLOntologyCreationException, OWLOntologyStorageException{
