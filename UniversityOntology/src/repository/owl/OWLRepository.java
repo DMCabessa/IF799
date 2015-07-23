@@ -21,10 +21,15 @@ import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
+import org.semanticweb.owlapi.reasoner.ConsoleProgressMonitor;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
+import org.semanticweb.owlapi.reasoner.OWLReasonerConfiguration;
+import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
+import org.semanticweb.owlapi.reasoner.SimpleConfiguration;
 import org.semanticweb.owlapi.util.ShortFormProvider;
 import org.semanticweb.owlapi.util.SimpleShortFormProvider;
 
+import exceptions.InconsistentAssertionException;
 import rationals.converters.ToRExpression;
 import repository.owl.interfaces.OWLRepositoryInterface;
 import util.Constants;
@@ -48,30 +53,50 @@ public class OWLRepository implements OWLRepositoryInterface{
 		singleton = null;
 	}
 	
-	public void insertObjectProperty(OWLObjectProperty property, OWLIndividual source, OWLIndividual target) throws OWLOntologyCreationException, OWLOntologyStorageException{
+	public void insertObjectProperty(OWLObjectProperty property, OWLIndividual source, OWLIndividual target, boolean toggle) throws OWLOntologyCreationException, OWLOntologyStorageException, InconsistentAssertionException{
 		OWLOntologyManager m = Util.create();
-		OWLOntology o = m.loadOntologyFromOntologyDocument(Constants.PROJECT_IRI);
+		OWLOntology o;
+		if(!toggle) o = m.loadOntologyFromOntologyDocument(Constants.PROJECT_IRI);
+		else o = m.loadOntologyFromOntologyDocument(Constants.ANOTHER_IRI);
 		OWLDataFactory df = Constants.DATA_FACTORY;
 		
 		OWLAxiom assertion = df.getOWLObjectPropertyAssertionAxiom(property, source, target);
 		m.addAxiom(o, assertion);
-		
-		OWLReasoner r = new Reasoner.ReasonerFactory().createNonBufferingReasoner(o);
-		System.out.println(!r.isConsistent());
-		System.out.println(r.getUnsatisfiableClasses().getEntitiesMinusBottom().size()>0);
-		
-		//m.saveOntology(o);
+		if(!toggle) {
+			m.saveOntology(o,Constants.ANOTHER_IRI);
+			insertObjectProperty(property, source, target, true);
+		}
+		else{
+			OWLReasoner r = new Reasoner.ReasonerFactory().createReasoner(o);
+			if(r.isConsistent()){
+				m.saveOntology(o,Constants.PROJECT_IRI);
+			}else{
+				throw new InconsistentAssertionException();
+			}
+		}
 	}
 	
-	public void insertDataProperty(OWLDataProperty property, OWLIndividual source, OWLLiteral literal) throws OWLOntologyCreationException, OWLOntologyStorageException{
+	public void insertDataProperty(OWLDataProperty property, OWLIndividual source, OWLLiteral literal, boolean toggle) throws OWLOntologyCreationException, OWLOntologyStorageException, InconsistentAssertionException{
 		OWLOntologyManager m = Util.create();
-		OWLOntology o = m.loadOntologyFromOntologyDocument(Constants.PROJECT_IRI);
+		OWLOntology o;
+		if(!toggle) o = m.loadOntologyFromOntologyDocument(Constants.PROJECT_IRI);
+		else o = m.loadOntologyFromOntologyDocument(Constants.ANOTHER_IRI);
 		OWLDataFactory df = Constants.DATA_FACTORY;
 		
 		OWLAxiom assertion = df.getOWLDataPropertyAssertionAxiom(property, source, literal);
 		m.addAxiom(o, assertion);
-		
-		m.saveOntology(o);
+		if(!toggle) {
+			m.saveOntology(o,Constants.ANOTHER_IRI);
+			insertDataProperty(property, source, literal, true);
+		}
+		else{
+			OWLReasoner r = new Reasoner.ReasonerFactory().createReasoner(o);
+			if(r.isConsistent()){
+				m.saveOntology(o,Constants.PROJECT_IRI);
+			}else{
+				throw new InconsistentAssertionException();
+			}
+		}
 	}
 	
 	public Set<OWLClass> getClasses() throws OWLOntologyCreationException{

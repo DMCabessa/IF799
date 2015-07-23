@@ -13,11 +13,13 @@ import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
+import exceptions.InconsistentAssertionException;
+
 public interface OWLRepositoryInterface {
 
-	public void insertObjectProperty(OWLObjectProperty property, OWLIndividual source, OWLIndividual target) throws OWLOntologyCreationException, OWLOntologyStorageException;
+	public void insertObjectProperty(OWLObjectProperty property, OWLIndividual source, OWLIndividual target, boolean toggle) throws OWLOntologyCreationException, OWLOntologyStorageException, InconsistentAssertionException;
 	
-	public void insertDataProperty(OWLDataProperty property, OWLIndividual source, OWLLiteral literal) throws OWLOntologyCreationException, OWLOntologyStorageException;
+	public void insertDataProperty(OWLDataProperty property, OWLIndividual source, OWLLiteral literal, boolean toggle) throws OWLOntologyCreationException, OWLOntologyStorageException, InconsistentAssertionException;
 	
 	public Set<OWLClass> getClasses() throws OWLOntologyCreationException;
 	

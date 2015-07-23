@@ -14,6 +14,7 @@ import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
 import control.OWLControl;
+import exceptions.InconsistentAssertionException;
 
 public class OWLFacade {
 	private static OWLFacade singleton;
@@ -33,14 +34,14 @@ public class OWLFacade {
 
 	public void insertObjectProperty(String propertyName, String sourceName,
 			String targetName) throws OWLOntologyCreationException,
-			OWLOntologyStorageException {
+			OWLOntologyStorageException, InconsistentAssertionException {
 		
 		control.insertObjectProperty(propertyName, sourceName, targetName);
 	}
 
 	public void insertDataProperty(String propertyName, String sourceName,
 			String value) throws OWLOntologyCreationException,
-			OWLOntologyStorageException {
+			OWLOntologyStorageException, InconsistentAssertionException {
 		control.insertDataProperty(propertyName, sourceName, value);
 	}
 

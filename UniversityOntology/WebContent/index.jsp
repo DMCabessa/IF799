@@ -51,7 +51,7 @@
 		                $("#obj1").val("");
 		                $("#obj2").val("");
 		                $("#property").val("0");
-		                $('#message').html(r).slideDown(100).delay(2000).slideUp(400); 
+		                $('#message').html(r).slideDown(400).delay(2000).slideUp(400); 
 		            },
 		            
 		        });
@@ -65,11 +65,11 @@
 		            type: "POST",
 		            url: "ajax-insert-data",
 					data: {obj: $("#obj").val(), attribute: $("#attribute").val(), value: $("#value").val()},
-		            success: function () {
+		            success: function (r) {
 		                $("#obj").val("");
 		                $("#value").val("");
 		                $("#attribute").val("0");
-		                $('#successfulInsert2').slideDown(100).delay(2000).slideUp(400);
+		                $('#message2').html(r).slideDown(400).delay(2000).slideUp(400); 
 		            }
 		        });
 			}
@@ -134,7 +134,6 @@
                 		</div>
                 	</div>
 	            </div>
-	            <div id="inconsistency"></div>
 				<input id="obj1" placeholder="Object">
 				<select id="property">
 					<option value="0">Select a property</option>
@@ -183,16 +182,9 @@
 		</div>
 		<div id="insert-data" class="pure-form">
 			<div class="center pure-u-1">
-				<div id="successfulInsert2" style="text-align: center; display: none;">
-					<div class="pure-u-1-3">
-                    	<div class="l-box">
-                        	<div class="alert-success" style="margin-bottom: 2%">
-                        		Success!
-                       		</div>
-                		</div>
-                	</div>
+				<div id="message2" style="text-align: center;">
 	            </div>
-	             <div id="errorInsert2" style="text-align: center; display: none;">
+	            <div id="errorInsert2" style="text-align: center; display: none;">
 					<div class="pure-u-1-3">
                     	<div class="l-box">
                         	<div class="alert-danger" style="margin-bottom: 2%">

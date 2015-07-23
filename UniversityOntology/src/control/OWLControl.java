@@ -16,6 +16,7 @@ import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
+import exceptions.InconsistentAssertionException;
 import repository.owl.OWLRepository;
 import repository.owl.interfaces.OWLRepositoryInterface;
 import util.Constants;
@@ -37,7 +38,7 @@ public class OWLControl {
 	}
 
 	public void insertObjectProperty(String propertyName, String sourceName, String targetName)
-			throws OWLOntologyCreationException, OWLOntologyStorageException {
+			throws OWLOntologyCreationException, OWLOntologyStorageException, InconsistentAssertionException {
 		OWLDataFactory df = Constants.DATA_FACTORY;
 		
 		OWLIndividual source = df.getOWLNamedIndividual(
@@ -47,11 +48,11 @@ public class OWLControl {
 		OWLObjectProperty property = df.getOWLObjectProperty(
 		IRI.create("#" + propertyName));
 		
-		repository.insertObjectProperty(property, source, target);
+		repository.insertObjectProperty(property, source, target, false);
 	}
 	
 	public void insertDataProperty(String propertyName, String sourceName, String value)
-			throws OWLOntologyCreationException, OWLOntologyStorageException {
+			throws OWLOntologyCreationException, OWLOntologyStorageException, InconsistentAssertionException {
 		
 		OWLDataFactory df = Constants.DATA_FACTORY;
 		
@@ -74,7 +75,7 @@ public class OWLControl {
 				literal = df.getOWLLiteral(value);
 			}
 		}		
-		repository.insertDataProperty(property, source, literal);
+		repository.insertDataProperty(property, source, literal, false);
 	}
 
 	public Set<OWLClass> getClasses() throws OWLOntologyCreationException {
